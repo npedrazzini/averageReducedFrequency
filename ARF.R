@@ -1,3 +1,5 @@
+library(tidyverse)
+
 ARF = function(df){
   
   #Convert tokens into  numerical factor vector (each unique lempos assigned a number)
@@ -30,14 +32,14 @@ ARF = function(df){
 
 # Do not change the above function. Only provide the relevant dataframe in the following: 
 
-new_ARFS_df <- ARF(tokens) # provide 'df': it has to be a character vector) 
+new_ARFS_df = ARF(tokens) # provide 'df': it has to be a character vector) 
 
-new_ARFS_df$ARF[new_ARFS_df$ARF<1] <- 1 # all ARFs < 1 -> 1
+new_ARFS_df$ARF[new_ARFS_df$ARF<1] = 1 # all ARFs < 1 -> 1
 
-df <- as.data.frame(df) # needed for the following step
+df = as.data.frame(df) # needed for the following step
 
-abs_freq <- df %>% count(df) # create dataset with absolute frequencies of all lempos (in alphabetical order)
+abs_freq = df %>% count(df) # create dataset with absolute frequencies of all lempos (in alphabetical order)
 
-new_ARFS_df$abs_freq <- abs_freq$n #add a column with absolute frequencies next to ARFs
+new_ARFS_df$abs_freq = abs_freq$n #add a column with absolute frequencies next to ARFs
 
-new_ARFS_df <- new_ARFS_df[order(-new_ARFS_df$ARF),] # sort final df by discending ARF order
+new_ARFS_df = new_ARFS_df[order(-new_ARFS_df$ARF),] # sort final df by discending ARF order
