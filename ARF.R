@@ -42,4 +42,4 @@ abs_freq = df %>% count(df) # create dataset with absolute frequencies of all le
 
 new_ARFS_df$abs_freq = abs_freq$n #add a column with absolute frequencies next to ARFs
 
-new_ARFS_df = new_ARFS_df[order(-new_ARFS_df$ARF),] # sort final df by discending ARF order
+new_ARFS_df = new_ARFS_df[order(-new_ARFS_df$ARF),] # sort the final df by discending ARF order
