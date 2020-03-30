@@ -1,4 +1,4 @@
-# averageReducedFrequency
+# Average Reduced Frequency (ARF)
 
 This repository contains the R script to calculate the Average Reduced Frequency (ARF) of all words in a corpus.
 
