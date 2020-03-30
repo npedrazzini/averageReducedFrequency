@@ -13,7 +13,7 @@ Our script is based on the latter, which allows to work with fractions, as oppos
 
 In the following script, the manual exclusion of all words with absolute frequency of 1 is the only addition to an otherwise pure conversion of the original ARF formula into R code. The addition is based on the theoretical assumption that any word with frequency 1 also has an ARF of 1, an assumption which is not captured by the original generic formula but is supported by the above literature.
 
-Before running the script, it is assumed that the user has matched each token of their corpus with the relevant lemma if the purpose is to work with lemma frequency. If not, the script will treat each word form as a unique word on its own, thus calculating the frequencies on their basis (e.g. 'sing', 'sang' and 'sung' would be regarded as three separate words and the absolute frequency of each will be calculated). 
+Before running the script, it is assumed that the user has matched each token of their corpus with the relevant lemma if the purpose is to work with lemma frequency. If not, the script will treat each word form as a unique word on its own, thus calculating the frequencies on their basis (e.g. *sing*, *sang* and *sung* would be regarded as three separate words and the absolute frequency of each will be calculated). 
 
 Finally, the input to the ARF function needs to be a (character) vector (corresponding to the ordered sequence of tokens in the corpus). If you start from a data frame consisting, for instance, of two columns (1. word form 2. lemma), then convert the lemma column into a vector first:
   ```r 
