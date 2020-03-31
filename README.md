@@ -4,7 +4,7 @@ This repository contains the R script to calculate the Average Reduced Frequency
 
 ARF is one of several existing types of adjusted frequencies in corpora. Both the theoretical motivations for its use and its mathematical implementation are presented in detail in the following literature:
 
-  1) Savický, Petr & Jaroslava Hlavácová. 2002. Measures of Word Commonness. *Journal of Quantitative Linguistics* 9., 215–231.
+  1) Savický, Petr & Jaroslava Hlavácová. 2002. Measures of Word Commonness. *Journal of Quantitative Linguistics* 9. 215–231.
   2) Hlavácová, Jaroslava. 2006. New Approach to Frequency Dictionaries - Czech Example. *LREC*. 373-378
   
 We would like to thank different members of the RStudio community for the helpful comments on earlier versions of this script and especially for pointing out the operational consequences of a frequency-based approach versus a direct application of the ARF mathematical formula, which is based on mere distances between each occurrence. 
