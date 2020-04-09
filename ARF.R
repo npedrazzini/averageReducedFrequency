@@ -38,7 +38,7 @@ ARF = function(df){
 
 # RUN THE FOLLOWING SCRIPT ON YOUR CORPUS ('df')
 
-new_ARFS_df = ARF(tokens) # Provide 'df': it has to be a character vector (see Read.Me file) 
+new_ARFS_df = ARF(df) # Provide 'df': it has to be a character vector (see Read.Me file) 
 
 new_ARFS_df$ARF[new_ARFS_df$ARF<1] = 1 # All ARFs < 1 -> 1
 
