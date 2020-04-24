@@ -14,7 +14,7 @@ ARF = function(df){
   nLempos = nlevels(df) # Number of unique lempos in df
   
   # Calculate position of every unique lempos
-  allpositions = map(1:nLempos, function(x) which(num == x) - 1)  # -1 needed since R is 0-indexed
+  allpositions = map(1:nLempos, function(x) which(num == x))
   
   # Calculate the ARF with the formula
   result = map(1:nLempos, function(x){
