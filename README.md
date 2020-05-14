@@ -18,6 +18,6 @@ Before running the script, it is assumed that the user has matched each token of
 Finally, the input to the ARF function needs to be a (character) vector (corresponding to the ordered sequence of tokens in the corpus). If you start from a data frame consisting, for instance, of two columns (1. word form 2. lemma), then convert the lemma column into a vector first:
   ```r 
   df <- as.vector(df[,2]) #OR
-  df <- as.vector(df[['nameofthecolumnwithlemmas']] 
+  df <- as.vector(df[['nameofthecolumnwithlemmas']])
   ```
  Then run the script, which will return a new dataframe with all lemmas, their absolute frequencies, and their ARFs. 
